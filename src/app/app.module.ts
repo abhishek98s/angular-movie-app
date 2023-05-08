@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopNavComponent } from './Model/top-nav/top-nav.component';
-import { SvgComponent } from './Shared/svg/svg.component';
 import { HeroComponent } from './Model/hero/hero.component';
 
 import { CommonModule } from '@angular/common';
@@ -29,7 +28,6 @@ import { FooterComponent } from './Model/footer/footer.component';
   declarations: [
     AppComponent,
     TopNavComponent,
-    SvgComponent,
     HeroComponent,
     NavComponent,
     NewInComponent,
