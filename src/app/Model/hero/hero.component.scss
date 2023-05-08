@@ -1,0 +1,20 @@
+.hero-box {
+    padding: 50px 0 0 0;
+    background: url("../../../assets/images/movie-poster.jpg");
+    background-size: cover;
+    background-position: center;
+    background: #946e28;
+    background-blend-mode: color-burn;
+}
+
+.gradient-button {
+    background: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+}
+
+.triangle-border {
+    width: 15px;
+    height: 20px;
+    border-radius: 3px;
+    clip-path: polygon(64% 50%, 0 0, 0 100%);
+    background-color: white;
+}
