@@ -5,7 +5,6 @@
     background-size: 100% 100%;
     // filter: opacity(20%);
     background-blend-mode: darken;
-
 }
 
 ul {
@@ -25,8 +24,29 @@ ul {
             transition: 0.4s;
             box-shadow: 0 2px 30px #ec7532;
         }
+
         &:hover::after {
             width: 100%;
         }
     }
+}
+
+.mobile-nav {
+    ul {
+        height: 180px;
+        animation: showDropDown .5s;
+        transition: .4s;
+        
+        @keyframes showDropDown {
+            from{
+                height: 0px;
+                padding: 0;
+            }
+    
+            to{
+                height: 180px;
+            }
+        }
+    }
+
 }

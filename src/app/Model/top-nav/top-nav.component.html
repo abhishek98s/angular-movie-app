@@ -1,8 +1,8 @@
-<nav class="relative z-50">
+<nav class="relative z-50 max-md:hidden py-[15px] container">
 
     <section class="max-w-[1100px]  mx-auto flex items-center justify-between">
 
-        <figure class="w-[150px]">
+        <figure class="w-[120px]">
             <img src="assets/svg/logo.svg">
         </figure>
 
@@ -10,11 +10,11 @@
         <section class="flex items-center justify-between gap-[1em]">
 
             <Ul class='text-white text-[12px] flex gap-[2.5em] tracking-[3px]'>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">WHAT'S ON</a></li>
-                <li><a href="#">NEWS</a></li>
-                <li><a href="#">SHIRTCODES</a></li>
-                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#" class="pt-[25px] pb-[30px]">HOME</a></li>
+                <li><a href="#" class="pt-[25px] pb-[30px]">WHAT'S ON</a></li>
+                <li><a href="#" class="pt-[25px] pb-[30px]">NEWS</a></li>
+                <li><a href="#" class="pt-[25px] pb-[30px]">SHIRTCODES</a></li>
+                <li><a href="#" class="pt-[25px] pb-[30px]">CONTACT US</a></li>
             </Ul>
 
 
@@ -104,4 +104,27 @@
 
     </section>
 
+</nav>
+
+
+
+<nav class=" h-[max-content] container fixed py-[15px] z-50 top-0 hidden flex-col w-[100%] max-md:flex">
+
+    <article class="flex items-center justify-between mx-[20px]">
+        <figure class="w-[100px] mx-[1rem]">
+            <img src="assets/svg/logo.svg">
+        </figure>
+
+        <figure class="w-[24px] cursor-pointer">
+            <a (click)="showDropDown()"><img src="assets/svg/menu.svg"></a>
+        </figure>
+    </article>
+
+    <ul *ngIf="dropdown" class='text-center text-white text-[13px] py-[10px] flex flex-col gap-5 tracking-[3px] overflow-hidden'>
+        <li class="w-[100%] block"><a href="#" class="block text-[#e2712f] w-[100%]">HOME</a></li>
+        <li class="w-[100%] block"><a href="#" class="block">WHAT'S ON</a></li>
+        <li class="w-[100%] block"><a href="#" class="block">NEWS</a></li>
+        <li class="w-[100%] block"><a href="#" class="block">SHORTCODES</a></li>
+        <li class="w-[100%] block"><a href="#" class="block">CONTACT US</a></li>
+    </ul>
 </nav>

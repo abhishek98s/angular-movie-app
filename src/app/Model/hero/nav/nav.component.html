@@ -1,14 +1,39 @@
-<article class="container pt-[80px] relative z-40 mx-auto flex justify-between items-center">
+<article class="container pt-[80px] relative z-40 mx-auto flex justify-between items-center max-md:hidden">
 
     <figure class="w-[200px]">
         <img src="assets/svg/logo.svg">
     </figure>
 
-    <ul class='text-white  text-[16px] w-[max-content] flex justify-end gap-[2em] tracking-[3px] border-b-[1px] border-[#dcdcdc6c] max-lg:gap-[1em] max-lg:text-[14px]'>
+    <ul
+        class='text-white desktop text-[16px] w-[max-content] flex justify-end gap-[2em] tracking-[3px] border-b-[1px] border-[#dcdcdc6c] max-lg:gap-[1em] max-lg:text-[14px]'>
         <li><a href="#">HOME</a></li>
         <li><a href="#">WHAT'S ON</a></li>
         <li><a href="#">NEWS</a></li>
         <li><a href="#">SHIRTCODES</a></li>
         <li><a href="#">CONTACT US</a></li>
     </ul>
+    
 </article>
+
+
+
+<section class="mobile-nav absolute top-[100px] z-20 hidden flex-col w-[100%] max-md:flex">
+
+    <article class="flex items-center justify-between mx-[20px]">
+        <figure class="w-[180px] mx-[1rem]">
+            <img src="assets/svg/logo.svg">
+        </figure>
+
+        <figure class="w-[32px]">
+            <a href="#" (click)="showDropDown()"><img src="assets/svg/menu.svg"></a>
+        </figure>
+    </article>
+
+    <ul *ngIf="dropdown" class='text-center text-white text-[13px] py-[10px] tracking-[3px] overflow-hidden bg-black'>
+        <li class="w-[100%] block"><a href="#" class="block text-[#e2712f] w-[100%]">HOME</a></li>
+        <li class="w-[100%] block"><a href="#" class="block">WHAT'S ON</a></li>
+        <li class="w-[100%] block"><a href="#" class="block">NEWS</a></li>
+        <li class="w-[100%] block"><a href="#" class="block">SHORTCODES</a></li>
+        <li class="w-[100%] block"><a href="#" class="block">CONTACT US</a></li>
+    </ul>
+</section>
