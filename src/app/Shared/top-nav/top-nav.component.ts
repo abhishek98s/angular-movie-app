@@ -11,6 +11,8 @@ export class TopNavComponent {
   svg_color = '#EC7532'
   dropdown!: boolean;
 
+  showNavbar: boolean = false;
+
   constructor(public appservices: AppService) {
     this.dropdown = this.appservices.dropdown;
   }
@@ -28,5 +30,15 @@ export class TopNavComponent {
   }
 
 
+  @HostListener('window:scroll', []) // for window scroll events
+  onScroll() {
+    if (window.pageYOffset > 100) {
+      this.showNavbar = true;
+    }
 
+    if (window.pageYOffset < 100) {
+      this.showNavbar = false;
+    }
+
+  }
 }
