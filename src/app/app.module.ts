@@ -12,8 +12,7 @@ import { AppComponent } from './app.component';
 import { TopPageComponent } from './modules/home/top-page/top-page.component';
 
 import { NewInComponent } from './modules/home/new-in/new-in.component';
-import { MovieListComponent } from './modules/home/new-in/movie-list/movie-list.component';
-import { MovieComponent } from './modules/home/new-in/movie-list/movie/movie.component';
+import { MovieComponent } from './modules/home/new-in/movie/movie.component';
 import { WeeelyMovieComponent } from './modules/home/weeely-movie/weeely-movie.component';
 import { WeeklyMovieListComponent } from './modules/home/weeely-movie/weekly-movie-list/weekly-movie-list.component';
 import { ComingSoonComponent } from './modules/home/coming-soon/coming-soon.component';
@@ -28,7 +27,6 @@ import { SharedModule } from './shared/shared.module';
     AppComponent,
     HeroComponent,
     NewInComponent,
-    MovieListComponent,
     MovieComponent,
     WeeelyMovieComponent,
     WeeklyMovieListComponent,

@@ -8,16 +8,12 @@
     </article>
 
     <section class="container">
+
         <owl-carousel-o [options]="customOptions">
-            <ng-template carouselSlide><app-movie></app-movie></ng-template>
-            <ng-template carouselSlide><app-movie></app-movie></ng-template>
-            <ng-template carouselSlide><app-movie></app-movie></ng-template>
-            <ng-template carouselSlide><app-movie></app-movie></ng-template>
-            <ng-template carouselSlide><app-movie></app-movie></ng-template>
-            <ng-template carouselSlide><app-movie></app-movie></ng-template>
-            <ng-template carouselSlide><app-movie></app-movie></ng-template>
-            <ng-template carouselSlide><app-movie></app-movie></ng-template>
-            <ng-template carouselSlide><app-movie></app-movie></ng-template>
+
+            <ng-template *ngFor="let movie of movies" carouselSlide><app-movie
+                    [movie]="movie"></app-movie></ng-template>
+
         </owl-carousel-o>
     </section>
 </section>

@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { Movie } from 'src/app/Model/movie';
+import { AppService } from 'src/app/app.service';
 
 
 @Component({
@@ -7,10 +9,16 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   templateUrl: './new-in.component.html',
   styleUrls: ['./new-in.component.scss']
 })
-export class NewInComponent {
+export class NewInComponent implements OnInit {
+  movies!: Movie[];
+
+
+  constructor(public appService: AppService) {
+
+  }
 
   customOptions: OwlOptions = {
-    loop: false,
+    loop: true,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
@@ -32,5 +40,11 @@ export class NewInComponent {
         items: 3
       }
     },
+  }
+
+
+  ngOnInit(): void {
+    this.movies = this.appService.getMovies();
+    console.log(this.movies)
   }
 }
