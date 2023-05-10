@@ -6,8 +6,8 @@ import { FooterComponent } from './footer/footer.component';
 import { StarsComponent } from './stars/stars.component';
 import { NavComponent } from './nav/nav.component';
 import { ContactComponent } from './contact/contact.component';
-import { WeeelyMovieComponent } from './weeely-movie/weeely-movie.component';
-import { WeeklyMovieListComponent } from './weekly-movie-list/weekly-movie-list.component';
+import { WeeelyMovieComponent } from './weeely-movies/weeely-movie.component';
+import { WeeklyMovieListComponent } from './weekly-movie/weekly-movie-list.component';
 
 @NgModule({
   declarations: [
