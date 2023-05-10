@@ -4,10 +4,9 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class AppService {
-  show: boolean = false;
-  constructor() { }
+  dropdown: boolean = false;
 
-  toggleNavbar() {
-    this.show = this.show == true ? false : true;
+  showDropDown() {
+    this.dropdown = !this.dropdown
   }
 }
