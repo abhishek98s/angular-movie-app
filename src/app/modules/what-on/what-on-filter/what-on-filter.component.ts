@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./what-on-filter.component.scss']
 })
 export class WhatOnFilterComponent {
-
+  clear(e:any){
+    console.log(e.target.value)
+  } 
 }
