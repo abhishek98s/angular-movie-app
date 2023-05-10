@@ -1,12 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { Movie } from 'src/app/Model/movie';
+import { AppService } from 'src/app/app.service';
 
 @Component({
   selector: 'app-coming-soon-movies',
   templateUrl: './coming-soon-movies.component.html',
   styleUrls: ['./coming-soon-movies.component.scss']
 })
-export class ComingSoonMoviesComponent {
+export class ComingSoonMoviesComponent implements OnInit {
+  movies!: Movie[];
+
+
+  constructor(public appService: AppService) {
+
+  }
+
   customOptions: OwlOptions = {
     loop: false,
     mouseDrag: true,
@@ -32,5 +41,10 @@ export class ComingSoonMoviesComponent {
       }
     },
     nav: true
+  }
+
+  ngOnInit(): void {
+    this.movies = this.appService.getMovies();
+    console.log(this.movies)
   }
 }

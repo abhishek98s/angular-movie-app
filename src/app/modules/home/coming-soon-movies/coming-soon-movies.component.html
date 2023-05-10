@@ -3,16 +3,19 @@
 
 
         <owl-carousel-o [options]="customOptions" class="owl">
-            <ng-template carouselSlide><app-coming-soon-movie></app-coming-soon-movie></ng-template>
-            <ng-template carouselSlide><app-coming-soon-movie></app-coming-soon-movie></ng-template>
-            <ng-template carouselSlide><app-coming-soon-movie></app-coming-soon-movie></ng-template>
-            <ng-template carouselSlide><app-coming-soon-movie></app-coming-soon-movie></ng-template>
-            <ng-template carouselSlide><app-coming-soon-movie></app-coming-soon-movie></ng-template>
-            <ng-template carouselSlide><app-coming-soon-movie></app-coming-soon-movie></ng-template>
-            <ng-template carouselSlide><app-coming-soon-movie></app-coming-soon-movie></ng-template>
-            <ng-template carouselSlide><app-coming-soon-movie></app-coming-soon-movie></ng-template>
-            <ng-template carouselSlide><app-coming-soon-movie></app-coming-soon-movie></ng-template>
-            <ng-template carouselSlide><app-coming-soon-movie></app-coming-soon-movie></ng-template>
+
+            <ng-template *ngFor="let movie of movies" carouselSlide>
+                <app-coming-soon-movie [movie]="movie"></app-coming-soon-movie>
+            </ng-template>
+
+            <ng-template *ngFor="let movie of movies" carouselSlide>
+                <app-coming-soon-movie [movie]="movie"></app-coming-soon-movie>
+            </ng-template>
+
+            <ng-template *ngFor="let movie of movies" carouselSlide>
+                <app-coming-soon-movie [movie]="movie"></app-coming-soon-movie>
+            </ng-template>
+
         </owl-carousel-o>
 
     </article>
