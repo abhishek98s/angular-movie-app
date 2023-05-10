@@ -45,6 +45,5 @@ export class NewInComponent implements OnInit {
 
   ngOnInit(): void {
     this.movies = this.appService.getMovies();
-    console.log(this.movies)
   }
 }

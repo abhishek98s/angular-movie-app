@@ -13,6 +13,5 @@ export class WeeklyMovieListComponent implements OnInit {
   // }
 
   ngOnInit(): void {
-    console.log(this.movie)
   }
 }

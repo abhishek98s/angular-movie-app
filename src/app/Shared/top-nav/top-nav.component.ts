@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, HostListener, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { AppService } from 'src/app/app.service';
 
 @Component({
@@ -7,13 +7,17 @@ import { AppService } from 'src/app/app.service';
   styleUrls: ['./top-nav.component.scss']
 })
 
-export class TopNavComponent {
+export class TopNavComponent implements OnInit{
   svg_color = '#EC7532'
   dropdown!: boolean;
 
   showNavbar: boolean = false;
+  dd= false
 
   constructor(public appservices: AppService) {
+  }
+  
+  ngOnInit(): void {
     this.dropdown = this.appservices.dropdown;
   }
 
@@ -34,6 +38,7 @@ export class TopNavComponent {
   onScroll() {
     if (window.pageYOffset > 100) {
       this.showNavbar = true;
+      console.log("er")
     }
 
     if (window.pageYOffset < 100) {

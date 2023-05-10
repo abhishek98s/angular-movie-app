@@ -12,24 +12,24 @@
         <li><a href="#">SHIRTCODES</a></li>
         <li><a href="#">CONTACT US</a></li>
     </ul>2
-    
+
 </article>
 
 
 
-<section class="mobile-nav absolute top-[100px] z-20 hidden flex-col w-[100%] max-md:flex">
+<section class="mobile-nav absolute top-[100px] left-0 right-0 z-20 hidden flex-col container  max-md:flex">
 
-    <article class="flex items-center justify-between mx-[20px]">
-        <figure class="w-[180px] mx-[1rem]">
+    <article class="flex items-center justify-between">
+        <figure class="w-[180px] ">
             <img src="assets/svg/logo.svg">
         </figure>
 
         <figure class="w-[32px]">
-            <a href="#" (click)="showDropDown()"><img src="assets/svg/menu.svg"></a>
+            <a href="javascript:void(0)" (click)="showDropDown()"><img src="assets/svg/menu.svg"></a>
         </figure>
     </article>
 
-    <ul *ngIf="dropdown" class='text-center text-white text-[13px] py-[10px] tracking-[3px] overflow-hidden bg-black'>
+    <ul *ngIf="dropdown" class='text-center  text-white text-[13px] py-[10px] tracking-[3px] overflow-hidden bg-black'>
         <li class="w-[100%] block"><a href="#" class="block text-[#e2712f] w-[100%]">HOME</a></li>
         <li class="w-[100%] block"><a href="#" class="block">WHAT'S ON</a></li>
         <li class="w-[100%] block"><a href="#" class="block">NEWS</a></li>

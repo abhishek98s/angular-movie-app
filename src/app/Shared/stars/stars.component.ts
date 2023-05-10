@@ -13,7 +13,6 @@ export class StarsComponent {
   starWidth = `w-[12px]`;
 
   constructor() {
-    console.log(this.width)
   }
 
 
