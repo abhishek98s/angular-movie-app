@@ -14,10 +14,9 @@
         </ul>
 
 
+        <section *ngFor="let movie of movies">
+            <app-weekly-movie-list [movie]="movie"></app-weekly-movie-list>
+        </section>
 
-        <app-weekly-movie-list></app-weekly-movie-list>
-        <app-weekly-movie-list></app-weekly-movie-list>
-        <app-weekly-movie-list></app-weekly-movie-list>
-        <app-weekly-movie-list></app-weekly-movie-list>
     </article>
 </section>
