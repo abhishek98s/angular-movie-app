@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { WhatOnRoutingModule } from './what-on-routing.module';
 
@@ -18,7 +19,8 @@ import { WhatOnFilterComponent } from './what-on-filter/what-on-filter.component
   imports: [
     CommonModule,
     WhatOnRoutingModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ]
 })
 export class WhatOnModule { }

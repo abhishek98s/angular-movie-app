@@ -38,12 +38,10 @@ export class TopNavComponent implements OnInit{
   onScroll() {
     if (window.pageYOffset > 100) {
       this.showNavbar = true;
-      console.log("er")
     }
 
     if (window.pageYOffset < 100) {
       this.showNavbar = false;
     }
-
   }
 }
