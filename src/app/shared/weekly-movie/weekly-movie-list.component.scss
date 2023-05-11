@@ -1,0 +1,11 @@
+.weekly-movie {
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+
+    figure {
+        @media only screen and (max-width: 600px) {
+            min-width: 100%;
+        }
+    }
+}

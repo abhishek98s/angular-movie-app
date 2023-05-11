@@ -1,0 +1,49 @@
+@import "/src/vars";
+
+nav {
+    background-color: $background;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    animation: top_bottom 0.5s;
+
+    @keyframes top_bottom {
+        from {
+            top: -30px;
+        }
+
+        to {
+            top: 0;
+        }
+    }
+
+    ul {
+        li {
+            position: relative;
+            height: 100%;
+            &::after {
+                content: " ";
+                display: block;
+                height: 2px;
+                width: 0%;
+                margin: auto;
+                position: absolute;
+                bottom: 0;
+                background-color: #ec7532;
+                transition: 0.4s;
+            }
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.twitter {
+    transition: 2s;
+    display: none;
+    &:hover {
+        background-color: #ec7532;
+    }
+}

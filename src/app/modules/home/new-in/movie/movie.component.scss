@@ -1,0 +1,41 @@
+figure {
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+
+    .play-readmore {
+        filter: opacity(0%);
+        transition: 0.4s;
+
+
+        &:hover {
+            filter: opacity(100%);
+            scale: 1.1;
+            transition: 0.4s;
+        }
+    }
+
+    &::after {
+        content: " ";
+        rotate: 140deg;
+        display: block;
+        width: 180%;
+        height: 180%;
+        z-index: 50;
+        transform: translate(100%, 20%);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(135deg, #ff6900 100%, #fcb900 100%);
+        filter: opacity(80%);
+        transition: 0.4s;
+    }
+
+    &:hover::after {
+        transform: translate(0%, 20%);
+    }
+}

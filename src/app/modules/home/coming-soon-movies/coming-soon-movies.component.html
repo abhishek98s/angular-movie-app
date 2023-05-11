@@ -1,0 +1,22 @@
+<article class="coming-soon-movies py-[55px] max-w-[100vw] overflow-hidden">
+    <article class="coming-soon-movies-lists container relative z-10">
+
+
+        <owl-carousel-o [options]="customOptions" class="owl">
+
+            <ng-template *ngFor="let movie of movies" carouselSlide>
+                <app-coming-soon-movie [movie]="movie"></app-coming-soon-movie>
+            </ng-template>
+
+            <ng-template *ngFor="let movie of movies" carouselSlide>
+                <app-coming-soon-movie [movie]="movie"></app-coming-soon-movie>
+            </ng-template>
+
+            <ng-template *ngFor="let movie of movies" carouselSlide>
+                <app-coming-soon-movie [movie]="movie"></app-coming-soon-movie>
+            </ng-template>
+
+        </owl-carousel-o>
+
+    </article>
+</article>

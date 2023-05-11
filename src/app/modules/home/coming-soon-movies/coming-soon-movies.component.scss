@@ -1,0 +1,27 @@
+.coming-soon-movies {
+    position: relative;
+    z-index: 2;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    .coming-soon-movies-list {
+        max-width: max-content;
+        transition: 0.4s ease;
+
+    
+
+        &:hover {
+            filter: brightness(100%);
+        }
+    }
+}
+

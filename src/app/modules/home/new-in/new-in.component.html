@@ -1,0 +1,20 @@
+<section class="py-[75px]">
+    <article class="container">
+
+        <div class="w-[100%] border-b-[2px] border-gray-300 mb-[40px]">
+
+            <h3 class="new-text text-[#ec7532] text-[18px] font-extralight pb-[20px]" routerLink="/what-on/tops">
+                NEW IN</h3>
+        </div>
+    </article>
+
+    <section class="container">
+
+        <owl-carousel-o [options]="customOptions">
+
+            <ng-template *ngFor="let movie of movies" carouselSlide><app-movie
+                    [movie]="movie"></app-movie></ng-template>
+
+        </owl-carousel-o>
+    </section>
+</section>
