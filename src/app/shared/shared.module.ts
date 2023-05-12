@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
 
 import { TopNavComponent } from './top-nav/top-nav.component';
 import { FooterComponent } from './footer/footer.component';
@@ -23,8 +22,7 @@ import { WeeklyMovieListComponent } from './weekly-movie/weekly-movie-list.compo
   ],
   imports: [
     CommonModule,
-    FormsModule,
-    RouterModule
+    FormsModule
   ],
   exports: [
     TopNavComponent,
