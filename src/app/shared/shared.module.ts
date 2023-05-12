@@ -25,7 +25,6 @@ import { WeeklyMovieListComponent } from './weekly-movie/weekly-movie-list.compo
     CommonModule,
     FormsModule,
     RouterModule
-    
   ],
   exports: [
     TopNavComponent,
