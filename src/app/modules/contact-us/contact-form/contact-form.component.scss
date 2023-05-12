@@ -1,0 +1,30 @@
+h5{
+    position: relative;
+
+    &::after{
+        position: absolute;
+        bottom: 0;
+        display: block;
+        left: 0;
+        width: 150px;
+        height: 3px;
+        background: #ec7532;
+        content: "";
+    }
+}
+
+button{
+    color: #ec7532;
+    padding: 10px 15px;
+    display: inline-block;
+    width: max-content;
+    letter-spacing: 3px;
+    border-radius: 30px;
+    font-size: 13px;
+    border: 2px solid #ec7532;
+
+    &:hover{
+        background: #ec7532;
+        color: #fff;
+    }
+}

@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: 'top', component: TopPageComponent },
   { path: 'what-on', loadChildren: () => import('./modules/what-on/what-on.module').then(m => m.WhatOnModule) },
   { path: 'news', loadChildren: () => import('./modules/news/news.module').then(m => m.NewsModule) },
+  { path: 'contact-us', loadChildren: () => import('./modules/contact-us/contact-us.module').then(m => m.ContactUsModule) },
 ];
 
 @NgModule({
