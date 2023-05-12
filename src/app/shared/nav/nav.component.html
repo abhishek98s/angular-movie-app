@@ -1,17 +1,16 @@
-<article class="container pt-[80px] relative mb-[20px] z-40 mx-auto flex justify-between items-center max-md:hidden">
-
-    <figure class="w-[200px]">
+<article class="container pt-[80px] relative mb-[20px] z-40 flex items-center justify-between max-md:hidden">
+    <figure class="w-[200px] cursor-pointer" routerLink="/top">
         <img src="assets/svg/logo.svg">
     </figure>
 
     <ul
         class='text-white desktop text-[16px] w-[max-content] flex justify-end gap-[2em] tracking-[3px] border-b-[1px] border-[#dcdcdc6c] max-lg:gap-[1.5em] max-lg:text-[14px]'>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">WHAT'S ON</a></li>
-        <li><a href="#">NEWS</a></li>
-        <li><a href="#">SHIRTCODES</a></li>
-        <li><a href="#">CONTACT US</a></li>
-    </ul>2
+        <li routerLink='/top' routerLinkActive="router-link-active" ><a href="javascript:void()">HOME</a></li>
+        <li routerLink='/what-on'><a href="javascript:void()">WHAT'S ON</a></li>
+        <li routerLink='/news'><a href="javascript:void()">NEWS</a></li>
+        <li><a >SHIRTCODES</a></li>
+        <li><a >CONTACT US</a></li>
+    </ul>
 
 </article>
 
