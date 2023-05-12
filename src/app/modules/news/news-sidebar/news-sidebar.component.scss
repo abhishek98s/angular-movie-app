@@ -9,3 +9,30 @@ input {
         font-size: 13px;
     }
 }
+
+aside {
+    h6 {
+        position: relative;
+        padding-bottom: 10px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            background-color: #ec7532;
+            height: 3px;
+        }
+    }
+
+    ul {
+        li {
+            transition: 0.4s;
+            &:hover {
+                transform: translateX(8px);
+                color: #fbbd61;
+            }
+        }
+    }
+}
