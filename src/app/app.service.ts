@@ -29,6 +29,27 @@ export class AppService {
       description: "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.",
       img: 'assets/images/the-end-of-days.jpg'
     }
+  ];
+
+  commingSoonMovies: Movie[] = [
+    {
+      genre: "THRILLER, HORROR",
+      title: "Daylight",
+      description: "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.",
+      img: 'assets/images/daylight.jpg'
+    },
+    {
+      genre: "THRILLER, HORROR",
+      title: "Locked In",
+      description: "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.",
+      img: 'assets/images/locked-in.jpg'
+    },
+    {
+      genre: "THRILLER, HORROR",
+      title: "The end of days",
+      description: "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.",
+      img: 'assets/images/the-end-of-days.jpg'
+    }
   ]
 
   getMovies() {

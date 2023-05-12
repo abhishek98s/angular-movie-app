@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 import { WhatOnRoutingModule } from './what-on-routing.module';
 
@@ -20,7 +21,8 @@ import { WhatOnFilterComponent } from './what-on-filter/what-on-filter.component
     CommonModule,
     WhatOnRoutingModule,
     SharedModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ]
 })
 export class WhatOnModule { }

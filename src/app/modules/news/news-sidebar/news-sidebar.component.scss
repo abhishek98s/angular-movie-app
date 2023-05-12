@@ -1,0 +1,11 @@
+input {
+    font-size: 13px;
+    &:focus {
+        border: 1px solid #ec7532;
+        outline: none;
+    }
+
+    &::placeholder {
+        font-size: 13px;
+    }
+}

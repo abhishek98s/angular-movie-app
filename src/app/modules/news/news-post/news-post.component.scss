@@ -1,0 +1,26 @@
+.news-body-box {
+    article {
+        h5 {
+            position: relative;
+            padding-bottom: 10px;
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 200px;
+                background-color: #ec7532;
+                height: 3px;
+            }
+        }
+
+        a {
+            border: 2px solid #ec7532;
+            padding: 15px 25px;
+            border-radius: 30px;
+            letter-spacing: 4px;
+            font-size: 13px;
+        }
+    }
+}
