@@ -28,3 +28,12 @@ button{
         color: #fff;
     }
 }
+
+.form-box{
+    input, textarea{
+        &:focus{
+            border: 1px solid #ec7532;
+            outline: none;
+        }
+    }
+}

@@ -3,29 +3,76 @@
         <h5 class="pb-[20px] tracking-[2px] text-[#ec7532] text-[18px]">SEND A MESSAGE</h5>
     </div>
 
-    <form class="flex flex-col gap-[20px]">
+    <section class="flex items-start justify-between">
 
-        <div class="flex flex-col gap-[5px]">
-            <label class="text-[12px] tracking-[1.5px]">NAME *</label>
-            <input class="h-[40px] p-[5px_15px] border border-stone-400/50" placeholder="">
-        </div>
-        
-        <div class="flex flex-col gap-[5px]">
-            <label class="text-[12px] tracking-[1.5px]">EMAIL *</label>
-            <input class="h-[40px] p-[5px_15px] border border-stone-400/50" placeholder="">
-        </div>
+        <form class="flex w-[50%] flex-col gap-[20px]">
 
-        <div class="flex flex-col gap-[5px]">
-            <label class="text-[12px] tracking-[1.5px]">WHERE DID YOU HEAR ABOUT US?</label>
-            <input class="h-[40px] p-[5px_15px] border border-stone-400/50" placeholder="">
-        </div>
+            <div class="form-box flex flex-col gap-[5px]">
+                <label class="text-[12px] tracking-[1.5px]">NAME *</label>
+                <input class="h-[40px] p-[5px_15px] border border-stone-400/50" placeholder="">
+            </div>
 
-        <div class="flex flex-col gap-[5px]">
-            <label class="text-[12px] tracking-[1.5px]">MESSAGE *</label>
-            <textarea class="h-[160px] p-[5px_15px] border border-stone-400/50" placeholder=""></textarea>
-        </div>
+            <div class="form-box flex flex-col gap-[5px]">
+                <label class="text-[12px] tracking-[1.5px]">EMAIL *</label>
+                <input class="h-[40px] p-[5px_15px] border border-stone-400/50" placeholder="">
+            </div>
 
-        <button>SEND MESSAGE</button>
-     
-    </form>
+            <div class="form-box flex flex-col gap-[5px]">
+                <label class="text-[12px] tracking-[1.5px]">WHERE DID YOU HEAR ABOUT US?</label>
+                <input class="h-[40px] p-[5px_15px] border border-stone-400/50" placeholder="">
+            </div>
+
+            <div class="form-box flex flex-col gap-[5px]">
+                <label class="text-[12px] tracking-[1.5px]">MESSAGE *</label>
+                <textarea class="h-[160px] p-[5px_15px] border border-stone-400/50" placeholder=""></textarea>
+            </div>
+
+            <button>SEND MESSAGE</button>
+
+        </form>
+
+
+        <section class="flex flex-col gap-[30px]">
+
+            <article class="flex gap-[20px] items-center">
+                <div class="p-[20px] grid place-items-center rounded-full border border-stone-600/50">
+                    <figure class="w-[30px]">
+                        <img src="assets/svg/location.svg">
+                    </figure>
+                </div>
+                <div class="text-[#4a4a4a]">
+                    <span class="text-[18px]">Address</span>
+                    <p class="text-[16px]">342 Sloane St, London, W1D 3NE</p>
+                </div>
+            </article>
+
+
+            <article class="flex gap-[20px] items-center">
+                <div class="p-[20px] grid place-items-center rounded-full border border-stone-600/50">
+                    <figure class="w-[30px]">
+                        <img src="assets/svg/email.svg">
+                    </figure>
+                </div>
+                <div class="text-[#4a4a4a]">
+                    <span class="text-[18px]">
+                        Email</span>
+                    <p class="text-[16px]">info@moviestar.co.uk</p>
+                </div>
+            </article>
+
+            <article class="flex gap-[20px] items-center">
+                <div class="p-[20px] grid place-items-center rounded-full border border-stone-600/50">
+                    <figure class="w-[30px]">
+                        <img src="assets/svg/telephone.svg">
+                    </figure>
+                </div>
+                <div class="text-[#4a4a4a]">
+                    <span class="text-[18px]">
+                        Telephone</span>
+                    <p class="text-[16px]">+44 0330 123 4567</p>
+                </div>
+            </article>
+
+        </section>
+    </section>
 </section>
