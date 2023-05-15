@@ -1,14 +1,14 @@
 <section class="weekly-box my-[50px]">
     <article class="container">
-        <ul class="text-[18px] w-{100%} border-b-[2px] border-gray-600 flex gap-[10px] items-center flex-wrap">
+        <ul class="text-[18px] w-{100%} border-b-[2px] border-gray-600/50 flex gap-[10px] items-center flex-wrap">
             <div class="flex items-center flex-wrap max-w-[85%]">
-                <li>TODAY</li>
-                <li>TUE</li>
-                <li>WED</li>
-                <li>THU</li>
-                <li>FRI</li>
-                <li>SAT</li>
-                <li>SUN</li>
+                <li [ngClass]="today == 'MON' ? 'today' : '' ">{{ today == 'MON' ? 'TODAY' : 'MON'}}</li>
+                <li [ngClass]="today == 'TUE' ? 'today' : '' ">{{ today == 'TUE' ? 'TODAY' : 'TUE'}}</li>
+                <li [ngClass]="today == 'WED' ? 'today' : '' ">{{ today == 'WED' ? 'TODAY' : 'WED'}}</li>
+                <li [ngClass]="today == 'THU' ? 'today' : '' ">{{ today == 'THU' ? 'TODAY' : 'THU'}}</li>
+                <li [ngClass]="today == 'FRI' ? 'today' : '' ">{{ today == 'FRI' ? 'TODAY' : 'FRI'}}</li>
+                <li [ngClass]="today == 'SAT' ? 'today' : '' ">{{ today == 'SAT' ? 'TODAY' : 'SAT'}}</li>
+                <li [ngClass]="today == 'SUN' ? 'today' : '' ">{{ today == 'SUN' ? 'TODAY' : 'SUN'}}</li>
             </div>
             <p class="text-[14px] ml-auto">FRI, 5 MAY</p>
         </ul>

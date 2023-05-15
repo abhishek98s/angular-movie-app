@@ -9,10 +9,14 @@ import { AppService } from 'src/app/app.service';
 })
 export class WeeelyMovieComponent implements OnInit {
   movies!: Movie[];
-  // date = new Date();
-  // MonthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  MonthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  weekday = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+  date = new Date();
+
+  today = this.weekday[this.date.getDay()]
 
   constructor(public appservices: AppService) {
+    console.log(this.weekday[this.date.getDay()])
   }
 
   @Input() set filteredMovies(value: Movie[]) {
