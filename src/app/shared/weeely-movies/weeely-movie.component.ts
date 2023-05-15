@@ -13,12 +13,11 @@ export class WeeelyMovieComponent implements OnInit {
   weekday = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
   date = new Date();
 
-  today = this.weekday[this.date.getDay()]
+  today = this.weekday[this.date.getDay()];
+  currentDate = this.weekday[this.date.getDay()] + ", " + this.date.getDate() + " " + this.MonthNames[this.date.getMonth()]
 
   constructor(public appservices: AppService) {
-    console.log(this.weekday[this.date.getDay()])
   }
-
   @Input() set filteredMovies(value: Movie[]) {
     this.movies = value;
   }
