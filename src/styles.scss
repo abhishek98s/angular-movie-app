@@ -52,14 +52,12 @@ svg {
         rotate: 140deg;
         display: block;
         width: 900px;
-        height: 245%;
+        height: 1200px;
         z-index: 50;
-        transform: translate(100%, 40%);
+        transform: translate(130%, 40%);
         position: absolute;
         top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+        left: 50%;
         background: linear-gradient(135deg, #ff6900 100%, #fcb900 100%);
         filter: opacity(80%);
         transition: 0.4s;
