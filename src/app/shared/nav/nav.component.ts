@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { AppService } from 'src/app/app.service';
 
 @Component({
@@ -7,6 +7,7 @@ import { AppService } from 'src/app/app.service';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent {
+  @ViewChild('mobileNav') mobileNav!: ElementRef;
   dropdown: boolean;
 
   constructor(public appservices: AppService) {
@@ -17,4 +18,13 @@ export class NavComponent {
     this.appservices.showDropDown();
     this.dropdown = this.appservices.dropdown;
   }
+
+  @HostListener('document:scroll', ['$event'])
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent) {
+    if( this.dropdown && !this.mobileNav.nativeElement.contains(event.target)){
+      this.showDropDown()
+    }
+  }
+
 }

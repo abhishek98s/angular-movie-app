@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { AppService } from 'src/app/app.service';
 
 @Component({
@@ -7,16 +7,17 @@ import { AppService } from 'src/app/app.service';
   styleUrls: ['./top-nav.component.scss']
 })
 
-export class TopNavComponent implements OnInit{
+export class TopNavComponent implements OnInit {
+  @ViewChild('mobileTopNav') mobileTopNav!: ElementRef;
   svg_color = '#EC7532'
   dropdown!: boolean;
 
   showNavbar: boolean = false;
-  dd= false
+  dd = false
 
   constructor(public appservices: AppService) {
   }
-  
+
   ngOnInit(): void {
     this.dropdown = this.appservices.dropdown;
   }
@@ -42,6 +43,13 @@ export class TopNavComponent implements OnInit{
 
     if (window.pageYOffset < 100) {
       this.showNavbar = false;
+    }
+  }
+  @HostListener('document:scroll', ['$event'])
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent) {
+    if (this.dropdown && !this.mobileTopNav.nativeElement.contains(event.target)) {
+      this.showDropDown()
     }
   }
 }
