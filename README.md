@@ -1,27 +1,52 @@
-# ResturentManagementApp
+# Specto: Movie Template
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.
+Specto a Movie template that shows list of movies and its information like descriptions.
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Live preview](#live-preview)
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **View Movies:** See available movies.
+- **Search Movies:** Search through available moview
+- **View details:** View details of each movie.
 
-## Build
+## Technologies Used
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+This project is built using the following technologies:
+HTML, CSS, SCSS, JS, Git, Tailwind, Angular, Typescript
 
-## Running unit tests
+## Getting Started
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To get a local copy of the project up and running, follow these steps:
 
-## Running end-to-end tests
+1. **Clone the repository:**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   ```bash
+   git clone https://github.com/abhishek98s/angular-movie-app/
+2. **Navigate to the project directory:**
 
-## Further help
+    ```bash
+    cd angular-movie-app
+3. **Install Dependencies**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    ```bash
+    npm i 
+4. **Run project**
+
+   ```bash
+    npm run start
+
+## Usage
+1. View movie list
+2. Pages like contact and about
+3. Movie information
+
+
+## Live preview
+https://angular-cinema-app.vercel.app/#/top
